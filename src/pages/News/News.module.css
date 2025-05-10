@@ -1,0 +1,453 @@
+.NewsPage {
+    background-color: black;
+    padding-top: 70px;
+    position: relative;
+}
+
+.NewsTitle {
+    margin-top: 70px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.TinTuc {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+        "anh1 nd1"
+        "anh2 nd2"
+        "anh3 nd3"
+        "anh4 nd4"
+        "anh5 nd5"
+        "anh6 nd6"
+        "anh7 nd7"
+        "anh8 nd8"
+        "anh9 nd9"
+        "anh10 nd10"
+    ;
+    margin-left: 70px;
+}
+
+.TrangTri {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.TT2,
+.TT4,
+.TT6,
+.TT8,
+.TT10,
+.TT12,
+.TT14,
+.TT16,
+.TT18,
+.TT20 {
+    padding: 25px;
+    color: #c9a465;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.TT2 h1,
+.TT4 h1,
+.TT6 h1,
+.TT8 h1,
+.TT10 h1,
+.TT12 h1,
+.TT14 h1,
+.TT16 h1,
+.TT18 h1,
+.TT20 h1 {
+    font-size: 33px;
+}
+
+.TT2 p,
+.TT4 p,
+.TT6 p,
+.TT8 p,
+.TT10 p,
+.TT12 p,
+.TT14 p,
+.TT16 p,
+.TT18 p,
+.TT20 p,
+.TT2 a,
+.TT4 a,
+.TT6 a,
+.TT8 a,
+.TT10 a,
+.TT12 a,
+.TT14 a,
+.TT16 a,
+.TT18 a,
+.TT20 a {
+    color: #c9a465;
+
+    text-decoration: none;
+}
+
+
+
+
+.TT2 a,
+.TT4 a,
+.TT6 a,
+.TT8 a,
+.TT10 a,
+.TT12 a,
+.TT14 a,
+.TT16 a,
+.TT18 a,
+.TT20 a {
+    text-decoration: none;
+    color: #c89f6b;
+    padding: 7px 18px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+
+
+.TT2 a:hover,
+.TT4 a:hover,
+.TT6 a:hover,
+.TT8 a:hover,
+.TT10 a:hover,
+.TT12 a:hover,
+.TT14 a:hover,
+.TT16 a:hover,
+.TT18 a:hover,
+.TT20 a:hover {
+    color: white;
+    border: 3px solid #c89f6b;
+    background-color: #c89f6b;
+    border-radius: 1px;
+}
+
+
+
+
+/* -------------------------------------------- */
+
+.TT1 {
+    grid-area: anh1;
+}
+
+.TT2 {
+    grid-area: nd1;
+}
+
+.TT3 {
+    grid-area: anh2;
+}
+
+.TT4 {
+    grid-area: nd2;
+}
+
+.TT5 {
+    grid-area: anh3;
+}
+
+.TT6 {
+    grid-area: nd3;
+}
+
+.TT7 {
+    grid-area: anh4;
+}
+
+.TT8 {
+    grid-area: nd4;
+}
+
+.TT9 {
+    grid-area: anh5;
+}
+
+.TT10 {
+    grid-area: nd5;
+}
+
+.TT11 {
+    grid-area: anh6;
+}
+
+.TT12 {
+    grid-area: nd6;
+}
+
+.TT13 {
+    grid-area: anh7;
+}
+
+.TT14 {
+    grid-area: nd7;
+}
+
+.TT15 {
+    grid-area: anh8;
+}
+
+.TT16 {
+    grid-area: nd8;
+}
+
+.TT17 {
+    grid-area: anh9;
+}
+
+.TT18 {
+    grid-area: nd9;
+}
+
+.TT19 {
+    grid-area: anh10;
+}
+
+.TT20 {
+    grid-area: nd10;
+}
+
+/* -------------------------------------------------------------------- */
+
+.SmallNews {
+    background-color: #1e1b1c;
+    padding-top: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 45% 45%;
+    grid-template-areas:
+        "new1 new2"
+        "new3 new4"
+        "new5 new6"
+        "new7 new8";
+    padding-bottom: 5%;
+}
+
+.SmallNews img {
+    margin-left: 70px;
+    width: 50%;
+    height: 310px;
+    object-fit: cover;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+
+}
+
+.ThanhKe {
+    position: absolute;
+    width: 140%;
+    height: 1px;
+    background-color: rgb(244, 240, 240);
+    margin-top: 310px;
+    /* margin-left: 30px; */
+}
+
+
+.NoiDung {
+    margin-top: 90px;
+    margin-left: 20px;
+    padding: 0px;
+}
+
+.NoiDung p {
+    color: white;
+}
+
+.NoiDung b {
+    color: #c89f6b;
+}
+
+/* ---------------------------------------- */
+.New1 {
+    grid-area: new1;
+    display: flex;
+    margin-top: 30px;
+}
+
+
+.New2 {
+    grid-area: new2;
+    display: flex;
+    margin-top: 30px;
+}
+
+.New3 {
+    grid-area: new3;
+    display: flex;
+    margin-top: 30px;
+}
+
+.New4 {
+    grid-area: new4;
+    display: flex;
+    margin-top: 30px;
+}
+
+.New5 {
+    grid-area: new5;
+    display: flex;
+    margin-top: 30px;
+}
+
+.New6 {
+    grid-area: new6;
+    display: flex;
+    margin-top: 30px;
+}
+
+.New7 {
+    grid-area: new7;
+    display: flex;
+    margin-top: 30px;
+}
+
+/* ----- */
+
+@media screen and (max-width: 768px) {
+    .TinTuc {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "anh1"
+            "nd1"
+            "anh2"
+            "nd2"
+            "anh3"
+            "nd3"
+            "anh4"
+            "nd4"
+            "anh5"
+            "nd5"
+            "anh6"
+            "nd6"
+            "anh7"
+            "nd7"
+            "anh8"
+            "nd8"
+            "anh9"
+            "nd9"
+            "anh10"
+            "nd10";
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .TT2,
+    .TT4,
+    .TT6,
+    .TT8,
+    .TT10,
+    .TT12,
+    .TT14,
+    .TT16,
+    .TT18,
+    .TT20 {
+        padding: 10px;
+    }
+
+    .TT2 h1,
+    .TT4 h1,
+    .TT6 h1,
+    .TT8 h1,
+    .TT10 h1,
+    .TT12 h1,
+    .TT14 h1,
+    .TT16 h1,
+    .TT18 h1,
+    .TT20 h1 {
+        font-size: 24px;
+    }
+
+    .SmallNews {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "new1"
+            "new2"
+            "new3"
+            "new4"
+            "new5"
+            "new6"
+            "new7"
+            "new8";
+        padding-left: 20px;
+        padding-right: 20px;
+        row-gap: 30px;
+    }
+
+
+    .SmallNews img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ThanhKe {
+        width: 100%;
+
+    }
+
+    .NoiDung {
+        margin-left: 50;
+        margin-top: 90px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+/* ------------------------------------- */
+.hiddenLeft,
+.hiddenRight {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.hiddenLeft {
+    transform: translateX(100px);
+}
+
+.hiddenRight {
+    transform: translateX(-100px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* styles trong CSS module */
+.row1 {
+    opacity: 0;
+    transform: translateY(90px);
+    transition: opacity 0.8s ease, transform 0.6s ease;
+}
+
+.slideUp {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ----------------------------------- */
+
+b {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+b:hover {
+    color: #67090a;
+}

@@ -1,0 +1,244 @@
+.layout {
+    display: grid;
+    grid-template-rows: 495px 470px 475px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "nd1 anh1"
+        "anh2 nd2"
+        "nd3 anh3";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 99px;
+}
+
+/* ---------------------------------------------- */
+.hang1 {
+    grid-area: nd1;
+    background-color: #1f1b1c;
+    padding: 58px;
+    padding-top: 155px;
+
+}
+
+.hang1 .Noidung h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.hang1 .Noidung p {
+    color: #c89f6b;
+    display: flex;
+}
+
+.hang1 .Noidung a {
+    text-decoration: none;
+    color: #c89f6b;
+    padding-left: 10px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.hang1 .Noidung a:hover {
+    color: white;
+    border: #c89f6b solid 3px;
+    padding: 10px 20px 10px 20px;
+    background-color: #c89f6b;
+    border-radius: 1px;
+}
+
+.hang1 .Noidung .thanhke {
+    height: 3px;
+    width: 50px;
+    background-color: #c89f6b;
+}
+
+.hang2 {
+    grid-area: anh1;
+    background-color: #1f1b1c;
+}
+
+
+.hang2 .anhQuan img {
+    width: 100%;
+    margin-top: 174px;
+}
+
+/* ---------------------------------------------------------------------- */
+.hang3 {
+    grid-area: anh2;
+    background-color: #a40d12;
+
+}
+
+.hang3 .anhQuan img {
+    width: 100%;
+}
+
+.hang4 {
+    grid-area: nd2;
+    background-color: #a40d12;
+    padding: 120px 40px 120px 40px;
+}
+
+.hang4 .Noidung h3 {
+    color: white;
+    font-size: 28px;
+}
+
+.hang4 .Noidung p {
+    color: white;
+}
+
+/* ---------------------------------------------------- */
+
+.hang6 {
+    grid-area: anh3;
+    background-color: #c8a565;
+
+}
+
+.hang6 .anhQuan img {
+    width: 100%;
+}
+
+.hang5 {
+    grid-area: nd3;
+    background-color: #c8a565;
+    padding: 120px 40px 120px 40px;
+}
+
+.hang5 .Noidung h3 {
+    color: black;
+    font-size: 28px;
+}
+
+.hang5 .Noidung p {
+    color: black;
+}
+
+
+.hang2 .anhQuan img {
+    animation: slideFromLeft 1.5s ease forwards;
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    width: 100%;
+    margin-top: 174px;
+}
+
+
+.hang3 .anhQuan img {
+    animation: slideFromRight 1.5s ease forwards;
+    position: relative;
+    left: 200px;
+    opacity: 0;
+    width: 100%;
+}
+
+.hang6 .anhQuan img {
+    animation: slideFromLeft 1.5s ease forwards;
+    position: relative;
+    left: -200px;
+    opacity: 0;
+    width: 100%;
+}
+
+@keyframes slideFromLeft {
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.Noidung p {
+    /* font-size: 15px; */
+}
+
+/* ------------------- */
+.hiddenLeft {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.9s ease-in-out;
+}
+
+.hiddenRight {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.9s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ------------------------------- */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .layout {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "nd1"
+            "anh1"
+            "nd2"
+            "anh2"
+            "nd3"
+            "anh3";
+        padding-top: 50px;
+    }
+}
+
+/* ------------------------------------------ */
+
+@media (max-width: 768px) {
+    .layout {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "nd1"
+            "anh1"
+            "nd2"
+            "anh2"
+            "nd3"
+            "anh3";
+        padding-top: 90px;
+
+    }
+
+    .hang1,
+    .hang4,
+    .hang5 {
+        padding: 20px;
+        padding-top: 40px;
+    }
+
+    .hang1 .Noidung h1,
+    .hang4 .Noidung h3,
+    .hang5 .Noidung h3 {
+        font-size: 20px;
+    }
+
+    .hang1 .Noidung a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .hang2 .anhQuan img,
+    .hang3 .anhQuan img,
+    .hang6 .anhQuan img {
+        margin-top: 10px;
+        width: 90%;
+        padding-left: 27px;
+
+        padding-bottom: 50px;
+    }
+
+
+}

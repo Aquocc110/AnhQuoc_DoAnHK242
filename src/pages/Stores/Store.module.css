@@ -1,0 +1,102 @@
+.StoresPage {
+    background-color: #1f1b1c;
+    padding-top: 80px;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.Title h1 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.ChiTiet li,
+.DiaChi li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+    padding-left: 70px;
+
+}
+
+.ChiTiet li p,
+.DiaChi li p {
+    color: white;
+    padding-left: 30px;
+    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.col1 {
+    width: 250px;
+    color: #b8aa70;
+}
+
+.col2 {
+    width: 450px;
+}
+
+.col3 {
+    width: 200px;
+}
+
+.ThanhKe {
+    height: 1px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(132, 126, 126);
+}
+
+.ChiTiet li .col1 {
+    color: #b8aa70;
+}
+
+/* ----------------------------- */
+@media screen and (max-width: 768px) {
+    .Chung {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
+        padding-left: 10px;
+    }
+
+    .KeTieuDe {
+        width: 212%;
+    }
+
+    .ChiTiet,
+    .DiaChi {
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+        min-width: 700px;
+
+        padding: 10px;
+    }
+
+    .ChiTiet li,
+    .DiaChi li {
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .Title h1 {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+}

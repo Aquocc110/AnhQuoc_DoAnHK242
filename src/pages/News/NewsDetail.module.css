@@ -1,0 +1,136 @@
+.newsDetail {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.newsDetail h1 {
+    color: white;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.Link {
+    display: flex;
+    margin-left: 90px;
+}
+
+.Link p {
+    font-size: 20px;
+    color: #cca764;
+    padding-left: 2%;
+}
+
+a {
+    color: #cca764;
+    text-decoration: none;
+}
+
+.imgAnh {
+    padding-left: 230px;
+    width: 800px;
+}
+
+.chitiet {}
+
+.ten {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #cca764;
+}
+
+.date {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.Mota {
+    margin-left: 100px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 160px;
+}
+
+.hashtags {
+    margin-left: 100px;
+    font-size: 18px;
+}
+
+.ThanhKe {
+    width: 80%;
+    height: 1px;
+    margin-left: 100px;
+    background-color: white;
+}
+
+.poin {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .newsDetail {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .newsDetail h1 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .Link {
+        margin-left: 20px;
+        gap: 4px;
+    }
+
+    .Link p {
+        font-size: 16px;
+        padding-left: 0;
+    }
+
+    .imgAnh {
+        padding-left: 0;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .chitiet {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .ten {
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .date {
+        margin-left: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .Mota {
+        margin-left: 20px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .ThanhKe {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .hashtags {
+        margin-left: 20px;
+        font-size: 12px;
+        margin-right: 20px;
+    }
+}

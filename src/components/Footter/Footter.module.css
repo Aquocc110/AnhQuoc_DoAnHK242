@@ -1,0 +1,146 @@
+.footter {
+    background-color: #1f1b1c;
+    padding-top: 10px;
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.AnhLogo {
+    margin-left: 100px;
+
+    width: 200px;
+    height: auto;
+}
+
+.LienHe {
+    grid-area: L1;
+    padding-top: 40px;
+    background-color: #1f1b1c;
+    margin-right: 100px;
+}
+
+.LienHe div {
+
+    display: flex;
+}
+
+.LienHe div p {
+    padding-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.td1 {
+    font-size: 12px;
+    color: white;
+    margin-right: 200px;
+}
+
+.L1 {
+    font-size: 12px;
+    color: #c8a565;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 19px;
+    color: #c8a565;
+    margin-left: 40px;
+}
+
+h3 {
+    font-size: 19px;
+    color: #c8a565;
+
+}
+
+.nut1 a {
+    margin-top: 400px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 35px 5px 35px;
+    border: white solid 1px;
+    transition: 0.3s;
+}
+
+.nut1 li {
+    padding-top: 25px;
+    list-style-type: none;
+}
+
+.nut1 a:hover {
+    background-color: white;
+    color: #1f1b1c;
+    font-weight: bold;
+}
+
+.ThanhKe {
+    margin-top: 20px;
+    height: 1px;
+    width: 70%;
+    background-color: #434041;
+}
+
+@media (max-width: 768px) {
+    .footter {
+
+        align-items: center;
+        padding: 20px;
+        height: auto;
+
+        overflow-x: hidden;
+    }
+
+    .nut1 {
+        display: none;
+    }
+
+
+    .footter nav {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .AnhLogo {
+        margin: 0 auto 15px;
+        width: 120px;
+    }
+
+
+    .td1 {
+        margin: 0 0 15px;
+
+    }
+
+    .td1 h2 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+
+    .LienHe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 20px;
+        padding-top: 0;
+
+    }
+
+    .LienHe div {
+        margin-bottom: 8px;
+        justify-content: center;
+    }
+
+    .LienHe div p {
+        padding-left: 0;
+    }
+}

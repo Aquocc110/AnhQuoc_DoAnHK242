@@ -1,0 +1,233 @@
+.ContactPage {
+    display: grid;
+    padding-top: 100px;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "L1 nd1"
+        "Dk Dk"
+        "FQ FQ";
+    gap: 0;
+}
+
+.L1 {
+    color: #ca9f6c;
+}
+
+p {
+    color: #f2eeef;
+}
+
+.LienHe {
+    grid-area: L1;
+    padding-top: 40px;
+    background-color: #1f1b1c;
+}
+
+.LienHe div {
+
+    display: flex;
+}
+
+.LienHe div p {
+    padding-left: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.NoiDung {
+    grid-area: nd1;
+    background-color: #1f1b1c;
+    padding: 20px 150px 50px 20px;
+}
+
+.NoiDung h1 {
+    color: #ca9f6c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.DangKy {
+    grid-area: Dk;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -200px;
+}
+
+.Form {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+.Form label {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #c89f6b;
+}
+
+.Form input,
+.Form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #c89f6b;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    outline: none;
+}
+
+.SendBtn {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: #c89f6b;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.SendBtn:hover {
+    color: white;
+    border: 3px solid #c89f6b;
+    background-color: #c89f6b;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.Form textarea::placeholder {
+    color: rgb(96, 93, 93);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.Form textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.Form textarea:focus {
+    border-bottom: 2px solid #ecbc7d;
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+.ThanhKe {
+    height: 1px;
+    width: 90%;
+    background-color: rgb(24, 24, 26);
+}
+
+/* -------------------- */
+.FQ {
+    grid-area: FQ;
+    background-color: #c8a565;
+    padding-left: 25%;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.n1 {
+    background: #c8a565;
+    margin: 10px 0;
+
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.2s ease;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.answer {
+    background-color: #1f1b1c;
+    color: #c8a565;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.show {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 10px;
+    padding: 30px 50px 30px 50px;
+}
+
+
+
+/* --------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .ContactPage {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .LienHe {
+        padding-top: 0px;
+    }
+
+    .LienHe div {
+
+        align-items: flex-start;
+    }
+
+    .LienHe div p {
+        padding-left: 0;
+        margin-left: 20px;
+
+    }
+
+    .NoiDung {
+        padding: 20px;
+    }
+
+    .NoiDung h1 {
+        font-size: 26px;
+    }
+
+    .DangKy {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .Form {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .FQ {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .answer {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .ThanhKe {
+        width: 100%;
+    }
+}
+
+.row1 {
+    opacity: 0;
+    transform: translateY(120px);
+    transition: opacity 2s ease, transform 0.7s ease;
+}
+
+.slideUp {
+    opacity: 1;
+    transform: translateY(0);
+}

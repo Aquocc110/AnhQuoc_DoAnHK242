@@ -1,0 +1,134 @@
+.detailMenu {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.detailMenu h1 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.Link {
+    display: flex;
+    margin-left: 90px;
+}
+
+.Link p {
+    font-size: 20px;
+    color: #cca764;
+    padding-left: 2%;
+}
+
+a {
+    color: #cca764;
+    text-decoration: none;
+}
+
+.imgAnh {
+    padding-left: 90px;
+    width: 400px;
+}
+
+.chitiet {
+    display: flex;
+
+    align-items: flex-start;
+}
+
+.ten {
+    margin-left: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #cca764;
+
+}
+
+.Gia {
+    margin-left: 40px;
+    font-size: 20px;
+    color: #cca764;
+    ;
+    margin-bottom: 2rem;
+}
+
+.Mota {
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.ThanhKe {
+    width: 80%;
+    height: 1px;
+    margin-left: 100px;
+    background-color: white;
+}
+
+.poin {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .detailMenu {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .detailMenu h1 {
+        font-size: 24px;
+        padding: 0 10px;
+    }
+
+    .Link {
+
+        margin-left: 20px;
+        gap: 4px;
+    }
+
+    .Link p {
+        font-size: 16px;
+        padding-left: 0;
+    }
+
+    .imgAnh {
+        padding-left: 0;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .chitiet {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .ten {
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .Gia {
+        margin-left: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .Mota {
+        margin-left: 0;
+        font-size: 14px;
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    .ThanhKe {
+        margin: 20px auto;
+        width: 90%;
+    }
+}
